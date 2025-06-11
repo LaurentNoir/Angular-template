@@ -1,0 +1,17 @@
+services:
+  app:
+    container_name: angular_app
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "4200:4200"
+    volumes:
+      - .:/usr/src/app # Monta el directorio del proyecto en el contenedor
+      - /usr/src/app/node_modules # Excluye node_modules del montaje
+    stdin_open: true
+    tty: true
+    #  Agrega variables de entorno para configurar Angular (opcional, pero recomendado)
+    environment:
+      - CHOKIDAR_USEPOLLING=true #  Útil para sistemas de archivos que no notifican cambios.
+    command: ["npm", "start", "--", "--host=0.0.0.0"] # Corrected line
