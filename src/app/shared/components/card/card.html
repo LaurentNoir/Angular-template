@@ -1,0 +1,44 @@
+<div class="{{ classCard }}">
+    <div class="card-body">
+        <div class="row no-gutters align-items-center">
+            @switch(type){
+            @case ('text') {
+            <div class="col mr-2">
+                <div class="text-xs font-weight-bold text-uppercase mb-1 text-{{ alert }}">
+                    {{ title }}</div>
+                <div class="h5 mb-0 font-weight-bold text-gray-800">{{ body }}</div>
+            </div>
+
+            }
+            @case ('percentage') {
+            <div class="col mr-2">
+                <div class="text-xs font-weight-bold text-uppercase mb-1 text-{{ alert }}">
+                    {{ title }}</div>
+                <div class="row no-gutters align-items-center">
+                    <div class="col-auto">
+                        <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">{{ value }}%</div>
+                    </div>
+                    <div class="col">
+                        <div class="progress progress-sm mr-2">
+                            <div class="progress-bar bg-info" role="progressbar" [style.width.%]="value"
+                                aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            }
+            @default {
+            <div class="col mr-2">
+                <div class="text-xs font-weight-bold text-uppercase mb-1 text-{{ alert }}">
+                    {{ title }}</div>
+                <div class="h5 mb-0 font-weight-bold text-gray-800">{{ body }}</div>
+            </div>
+            }
+            }
+            <div class="col-auto">
+                <i class="{{ icon }}"></i>
+            </div>
+
+        </div>
+    </div>
+</div>

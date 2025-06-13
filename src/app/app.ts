@@ -1,11 +1,16 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { Card } from './shared/components/card/card';
+import { Sidebar } from './shared/components/sidebar/sidebar';
+import { Header } from './shared/components/header/header';
+import { Footer } from "./shared/components/footer/footer";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, Card, Sidebar, Header, Footer],
   templateUrl: './app.html',
-  styleUrl: './app.css'
+  styleUrl: './app.css',
+
 })
 export class App {
   protected title = 'angular-template';
