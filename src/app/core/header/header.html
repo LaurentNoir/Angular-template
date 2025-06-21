@@ -5,13 +5,13 @@
 
     <ul class="navbar-nav ml-auto">
         <li class="nav-item dropdown no-arrow d-sm-none">
-            <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown"
+            <a class="nav-link dropdown-toggle" id="searchDropdown" role="button" data-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="false">
                 <i class="fas fa-search fa-fw"></i>
             </a>
         </li>
         <li class="nav-item dropdown no-arrow mx-1">
-            <a #alertMenu class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown"
+            <a #alertMenu class="nav-link dropdown-toggle" id="alertsDropdown" role="button" data-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="false" (click)="openCloseAlertMenu()">
                 <i class="fas fa-bell fa-fw"></i>
                 <span class="badge badge-danger badge-counter">3+</span>
@@ -60,7 +60,7 @@
 
         <!-- Nav Item - Messages -->
         <li class="nav-item dropdown no-arrow mx-1">
-            <a class="nav-link dropdown-toggle" #mensajeMenu  href="#" id="messagesDropdown" role="button" data-toggle="dropdown" (click)="openCloseMessageMenu()"
+            <a class="nav-link dropdown-toggle" #mensajeMenu  id="messagesDropdown" role="button" data-toggle="dropdown" (click)="openCloseMessageMenu()"
                 aria-haspopup="true" aria-expanded="false">
                 <i class="fas fa-envelope fa-fw"></i>
                 <!-- Counter - Messages -->
@@ -111,7 +111,7 @@
 
         <div class="topbar-divider d-none d-sm-block"></div>
         <li class="nav-item dropdown no-arrow">
-            <a class="nav-link dropdown-toggle" #userMenu href="#" id="userDropdown" role="button" data-toggle="dropdown" (click)="openCloseUserMenu()"
+            <a class="nav-link dropdown-toggle" #userMenu id="userDropdown" role="button" data-toggle="dropdown" (click)="openCloseUserMenu()"
                 aria-haspopup="true" aria-expanded="false">
                 <span class="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span>
                 <img class="img-profile rounded-circle" src="sb/undraw_profile.svg">
@@ -130,7 +130,7 @@
                     Activity Log
                 </a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                <a class="dropdown-item" data-toggle="modal" data-target="#logoutModal">
                     <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                     Logout
                 </a>

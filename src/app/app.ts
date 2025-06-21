@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { Card } from './shared/components/card/card';
-import { Sidebar } from './shared/components/sidebar/sidebar';
-import { Header } from './shared/components/header/header';
-import { Footer } from "./shared/components/footer/footer";
+import { Sidebar } from './core/sidebar/sidebar';
+import { Header } from './core/header/header';
+import { Footer } from "./core/footer/footer";
 
 @Component({
   selector: 'app-root',

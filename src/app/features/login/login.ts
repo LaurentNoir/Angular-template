@@ -8,12 +8,15 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 })
 export class Login implements OnInit, OnDestroy {
 
+  private _bodyElement: HTMLBodyElement | undefined;
+
   ngOnInit(): void {
-    // Initialization logic here
+    this._bodyElement = document.getElementsByTagName('body').item(0) as HTMLBodyElement
+    this._bodyElement.className = 'bg-gradient-primary';
   }
 
   ngOnDestroy(): void {
-    // Cleanup logic here
+     this._bodyElement!.className = 'bg-gradient-primary';
   }
 
 }
