@@ -1,6 +1,7 @@
 import { Routes } from '@angular/router';
 import { Login } from './features/login/login';
 import { Admin } from './features/admin/admin';
+import { NoFound } from './no-found/no-found';
 
 
 export const routes: Routes = [
@@ -20,6 +21,16 @@ export const routes: Routes = [
                 path: '',
                 loadComponent: () => import('./features/admin/dashboard/dashboard').then(m => m.Dashboard)
             },
+            {
+                path: '**',
+                component: NoFound,
+                data: { main: false }
+            }
         ]
+    },
+    {
+        path: '**',
+        component: NoFound,
+        data: { main: true }
     }
 ];
