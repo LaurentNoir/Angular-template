@@ -8,5 +8,15 @@ import { Component, Input } from '@angular/core';
   styleUrl: './title.css'
 })
 export class Title {
+  public titleType = TitleType
   @Input() title: string = '';
+  @Input() selectedTitleType: number = this.titleType.None;
+  @Input() text: string = '';
+
+}
+
+export enum TitleType {
+  None,
+  Link,
+  SubTitle
 }

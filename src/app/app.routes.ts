@@ -1,7 +1,7 @@
 import { Routes } from '@angular/router';
 import { Login } from './features/login/login';
 import { Admin } from './features/admin/admin';
-import { NoFound } from './no-found/no-found';
+import { NoFound } from './features/no-found/no-found';
 
 
 export const routes: Routes = [
@@ -20,6 +20,10 @@ export const routes: Routes = [
             {
                 path: '',
                 loadComponent: () => import('./features/admin/dashboard/dashboard').then(m => m.Dashboard)
+            },
+            {
+                path: 'color',
+                loadComponent: () => import('./features/admin/color/color').then(m => m.Color)
             },
             {
                 path: '**',
