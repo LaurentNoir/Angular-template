@@ -26,6 +26,10 @@ export const routes: Routes = [
                 loadComponent: () => import('./features/admin/color/color').then(m => m.Color)
             },
             {
+                path: 'border',
+                loadComponent: () => import('./features/admin/border/border').then(m => m.Border)
+            },
+            {
                 path: '**',
                 component: NoFound,
                 data: { main: false }
