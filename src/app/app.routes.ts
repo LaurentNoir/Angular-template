@@ -18,6 +18,10 @@ export const routes: Routes = [
         loadComponent: () => import('./features/register/register').then(m => m.Register)
     },
     {
+        path: 'forgot-password',
+        loadComponent: () => import('./features/forgot-password/forgot-password').then(m => m.ForgotPassword)
+    },
+    {
         path: 'panel',
         component: Admin,
         children: [
