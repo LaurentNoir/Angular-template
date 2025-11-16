@@ -14,6 +14,10 @@ export const routes: Routes = [
         component: Login
     },    
     {
+        path: 'register',
+        loadComponent: () => import('./features/register/register').then(m => m.Register)
+    },
+    {
         path: 'panel',
         component: Admin,
         children: [

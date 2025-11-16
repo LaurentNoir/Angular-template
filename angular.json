@@ -25,7 +25,7 @@
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css",
               "src/app/styles/sb/vendor/fontawesome-free/css/all.min.css",
-              "src/app/styles/sb/css/sb-admin-2.min.css"
+              "src/app/styles/sb/css/sb-admin-2.css"
             ],
             "server": "src/main.server.ts",
             "outputMode": "server",
