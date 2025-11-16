@@ -35,7 +35,7 @@ export const sidebarResponse : ResponseModel<SidebarModel> = {
                 {
                   title: "Cards",
                   isPage: true,
-                  url: "",
+                  url: "/panel/cards",
                   icon: 'fas fa-fw fa-wrench'
                 }
               ],

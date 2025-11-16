@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Title, TitleType } from '../../../shared/components/title/title'
+import { Title, TitleType } from '../../../shared/components/title/title';
 
 @Component({
   selector: 'app-color',
