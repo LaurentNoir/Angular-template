@@ -7,7 +7,7 @@ This project was generated using [Angular CLI](https://github.com/angular/angula
 To start a local development server, run:
 
 ```bash
-ng serve
+docker-compose up
 ```
 
 Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
@@ -18,6 +18,10 @@ Angular CLI includes powerful code scaffolding tools. To generate a new componen
 
 ```bash
 ng generate component component-name
+```
+
+```bash
+docker cp angular_app:/usr/src/app/node_modules node_modules
 ```
 
 For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:

@@ -6,12 +6,15 @@ import { provideClientHydration, withEventReplay } from '@angular/platform-brows
 
 import { loginServiceToken } from './core/services/abstracts/ILoginService';
 import { LoginServiceFake } from './core/services/mocks/login-service/login.service.fake';
+import { userServiceToken } from './core/services/abstracts/IUserService';
+import { UserServiceFake } from './core/services/mocks/user-service/user.service.fake';
 
 export const appConfig: ApplicationConfig = {
   providers: [
     provideBrowserGlobalErrorListeners(),
     provideZonelessChangeDetection(),
     provideRouter(routes), provideClientHydration(withEventReplay()),
-    { provide: loginServiceToken, useClass: LoginServiceFake}
+    { provide: loginServiceToken, useClass: LoginServiceFake },
+    { provide: userServiceToken, useClass: UserServiceFake },
   ]
 };

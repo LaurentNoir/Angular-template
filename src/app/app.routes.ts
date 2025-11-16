@@ -22,12 +22,16 @@ export const routes: Routes = [
                 loadComponent: () => import('./features/admin/dashboard/dashboard').then(m => m.Dashboard)
             },
             {
-                path: 'color',
+                path: 'colors',
                 loadComponent: () => import('./features/admin/color/color').then(m => m.Color)
             },
             {
-                path: 'border',
+                path: 'borders',
                 loadComponent: () => import('./features/admin/border/border').then(m => m.Border)
+            },
+            {
+                path: 'NoFound',
+                loadComponent: () => import('./features/no-found/no-found').then(m => m.NoFound)
             },
             {
                 path: '**',
