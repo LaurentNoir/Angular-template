@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Title } from '../../../shared/components/title/title'
+import { Title, TitleType } from '../../../shared/components/title/title';
 
 @Component({
   selector: 'app-dashboard',
@@ -9,4 +9,5 @@ import { Title } from '../../../shared/components/title/title'
 })
 export class Dashboard {
   public title: string = 'Dashboard';
+  public titleType: number = TitleType.Title;
 }
