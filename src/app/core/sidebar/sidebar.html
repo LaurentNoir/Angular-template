@@ -7,11 +7,14 @@
         <div class="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div>
     </a>
     @for (item of menu; track item; let row = $index) {
-        <hr class="sidebar-divider" [class.my-0]="row == 0">
+        @if(item.dividerUp){
+            <hr class="sidebar-divider">
+        }
+        
         @if(item.isPage){
             <li class="nav-item">
                 <a class="nav-link" [routerLink]="item.url">
-                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <i [attr.class]="item.icon"></i>
                     <span>{{ item.title }}</span></a>
             </li>
         }@else{
@@ -47,6 +50,10 @@
                     </li>
                 }                
             }            
+        }
+
+        @if(item.dividerDown){
+            <hr class="sidebar-divider">
         }
     }
     <hr class="sidebar-divider d-none d-md-block">

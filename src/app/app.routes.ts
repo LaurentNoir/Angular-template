@@ -46,6 +46,10 @@ export const routes: Routes = [
                 loadComponent: () => import('./features/admin/other/other').then(m => m.Other)
             },
             {
+                path: '404',
+                loadComponent: () => import('./features/no-found/no-found').then(m => m.NoFound)
+            },
+            {
                 path: '**',
                 component: NoFound,
                 data: { main: false }

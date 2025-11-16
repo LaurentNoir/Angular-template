@@ -1,4 +1,6 @@
 export interface NavItemModel{
+    dividerUp: boolean;
+    dividerDown: boolean;
     title: string;
     isPage: boolean;
     url?: string;
