@@ -29,7 +29,7 @@ export const sidebarResponse : ResponseModel<SidebarModel> = {
                 {
                   title: "Buttons",
                   isPage: true,
-                  url: "",
+                  url: "/panel/buttons",
                   icon: 'fas fa-fw fa-cog'
                 },
                 {

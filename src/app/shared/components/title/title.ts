@@ -18,5 +18,6 @@ export class Title {
 export enum TitleType {
   None,
   Link,
-  SubTitle
+  SubTitle,
+  Title
 }
