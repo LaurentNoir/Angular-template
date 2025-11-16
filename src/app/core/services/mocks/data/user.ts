@@ -65,11 +65,6 @@ export const sidebarResponse : ResponseModel<SidebarModel> = {
                   url: "/panel/borders"
                 },
                 {
-                  title: "Animations",
-                  isPage: true,
-                  url: ""
-                },
-                {
                   title: "Other",
                   isPage: true,
                   url: "/panel/other"
@@ -129,22 +124,6 @@ export const sidebarResponse : ResponseModel<SidebarModel> = {
           ],
           dividerUp: false,
           dividerDown: false
-        },
-        {
-          title: 'Charts',
-          isPage: true,
-          url: '/charts',
-          icon: 'fas fa-fw fa-chart-area',
-          dividerUp: false,
-          dividerDown: false
-        },
-        {
-          title: 'Tables',
-          isPage: true,
-          url: '/tables',
-          icon: 'fas fa-fw fa-table',
-          dividerUp: false,
-          dividerDown: false
-        }, 
+        }
     ]
 }
