@@ -38,6 +38,10 @@ export const routes: Routes = [
                 loadComponent: () => import('./features/admin/button/button').then(m => m.Button)
             },
             {
+                path: 'cards',
+                loadComponent: () => import('./features/admin/card/card').then(m => m.Card)
+            },
+            {
                 path: '**',
                 component: NoFound,
                 data: { main: false }
