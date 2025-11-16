@@ -70,7 +70,7 @@ export const sidebarResponse : ResponseModel<SidebarModel> = {
                 {
                   title: "Other",
                   isPage: true,
-                  url: ""
+                  url: "/panel/other"
                 }
               ],
               url: ""
