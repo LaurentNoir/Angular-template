@@ -5,7 +5,11 @@
   "projects": {
     "angular-template": {
       "projectType": "application",
-      "schematics": {},
+      "schematics": {
+        "@schematics/angular:component": {
+        "style": "scss"
+      }
+      },
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -22,10 +26,11 @@
               }
             ],
             "styles": [
+              "src/app/styles/sb/css/sb-admin-2.css",
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "src/styles.css",
               "src/app/styles/sb/vendor/fontawesome-free/css/all.min.css",
-              "src/app/styles/sb/css/sb-admin-2.css"
+              
+              "src/styles.scss"
             ],
             "server": "src/main.server.ts",
             "outputMode": "server",
@@ -86,7 +91,7 @@
               }
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.scss"
             ],
             "polyfills": [
               "@angular/localize/init"
